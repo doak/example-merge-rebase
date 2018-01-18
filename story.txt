@@ -1,0 +1,19 @@
+Interactive Rebase/Merge Story
+==============================
+
+A lot of your team members are quite lazy and avoid moving their hands too much
+at work. Your boss don't like that, because he get's a lot of text hard to read
+since merly anybody wants to use the shift key and just type all lowercase.
+
+You -- you don't how that could happen -- are now in charge to make the world a
+better place and write a small script to fix capitals.
+
+
+Take the driver seat
+--------------------
+
+You have just written a very simple script. It works. And you have pushed it on
+master. Everything is great -- job is done. You even implemented a test case.
+Your boss is already out of office, and you will be in vacaction the next two
+weeks.
+No time for documentation. But anyway, you know your code, don't you?

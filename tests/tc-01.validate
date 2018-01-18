@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+OK=true
+
+failure() {
+    echo "FAILURE: $*" >&2
+    OK=false
+}
+
+concat_lines() {
+    sed -e':a' -e 'N;s/\n/ /;ba'
+}
+
+concat_lines |
+grep --color=auto '[.:][[:space:]]\+[a-z]' &&
+failure "Capital after fullstop."
+
+$OK
