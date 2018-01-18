@@ -5,7 +5,7 @@ process() {
 
     cat "$file" |
     sed "1s/^./\u&/" |
-    sed "s/\.\s\+./\U&/"
+    sed "\$!N;s/\.\s\+./\U&/;P;D"
 }
 
 process "$1"

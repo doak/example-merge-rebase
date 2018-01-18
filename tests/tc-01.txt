@@ -1,3 +1,5 @@
 that is a short text,
-without any capitals. that
-is hard to read.
+without any capitals.
+but capitals are
+important. it it easier
+to read.
