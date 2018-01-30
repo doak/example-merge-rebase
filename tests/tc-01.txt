@@ -3,3 +3,6 @@ without any capitals.
 but capitals are
 important. it it easier
 to read.
+
+new paragraph shall be
+handled as well.
