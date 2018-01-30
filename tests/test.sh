@@ -9,18 +9,18 @@ info() {
 }
 
 process_text() {
-    file="$1"
-    "$BASEDIR/../text-processor.sh" "$file"
+    "$BASEDIR/../text-processor.sh" "$@"
 }
 
 
 for f in "$BASEDIR/tc-"*".txt"; do
     TC_STEM="${f%.txt}"
+    ARGS=(`cat "$TC_STEM.args" 2>/dev/null`)
     info "test case: '${TC_STEM##*/}'"
     VALIDATE="$TC_STEM.validate"
 
-    process_text "$f" |
-    "$VALIDATE" ||
+    process_text "$f" "${ARGS[@]}" |
+    "$VALIDATE" "${ARGS[@]}" ||
     OK=false
 done
 

@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+OK=true
+
+
+failure() {
+    echo "FAILURE: $*" >&2
+    OK=false
+}
+
+
+if test "$#" -eq 0; then
+    failure "Missing regex to check for."
+    exit 2
+fi
+
+EXPRESSIONS=()
+for pattern in "$@"; do
+    EXPRESSIONS+=(-e "\<$pattern\>")
+done
+
+grep --color=auto "${EXPRESSIONS[@]}" &&
+failure "Match for regex was found."
+
+$OK
