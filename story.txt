@@ -17,3 +17,38 @@ master. Everything is great -- job is done. You even implemented a test case.
 Your boss is already out of office, and you will be in vacaction the next two
 weeks.
 No time for documentation. But anyway, you know your code, don't you?
+
+
+Start slowly
+--------------------
+
+Vacation was great, but now you are back at work. You have dozens of emails,
+including from your boss. Suprise, suprise: he requests some feature, and
+-- too bad -- it seems your code had been used. At least you colleques found
+several issue, summarized by your boss with "it is not working like intended".
+
+Luckily you had been out of town. Unfortunately you came back too early:
+Currently there are three open branches made by your colleques, but they have
+not been integrated yet.  You get a feeling what was to come next.
+Phone is ringing ...
+
+[ring ring]
+"Anthony?"
+"..Yes, ..."
+"You are already back in office, aren't you?"
+"Yeah, I am just..."
+"That's good. I am calling because of the script. There had been some issue,
+    but never mind, it is fixed now. Can you please integrate it?  I need it
+    today ..."
+"Integrating... it looks like it would..."
+"Great, I will meet the CEO in two hours. Can you prepare everything and join
+    the meeting?"
+"...yes, but..."
+"Everything is ready. Haven't you joined that two-days-Git-Workshop, recently?"
+"Last week, but ..."
+"Wonderful. See you later."
+[click]
+
+
+Okay, no warmup for today. Let's see. Merging? Rebasing? Hopefully at least the
+tests are in place...!
